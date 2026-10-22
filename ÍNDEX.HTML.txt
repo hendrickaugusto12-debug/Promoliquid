@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromoLiquida • Achadinhos e Ofertas</title>
+  <style>
+    :root { --primary: #ff4757; --bg: #f8f9fa; --card-bg: #ffffff; --text: #2f3542; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 20px; max-width: 800px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 25px; }
+    header h1 { font-size: 2rem; color: var(--primary); }
+    header p { color: #747d8c; font-size: 0.95rem; margin-top: 5px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; }
+    .card { background: var(--card-bg); border-radius: 12px; padding: 15px; border: 1px solid #eccc68; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+    .card-icon { font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+    .badge { font-size: 0.75rem; font-weight: bold; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; display: inline-block; width: fit-content; margin-bottom: 8px; }
+    .shopee { background: #ffeaa7; color: #d63031; }
+    .mercadolivre { background: #fff200; color: #2d3436; }
+    .card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+    .card p { font-size: 0.85rem; color: #57606f; margin-bottom: 12px; }
+    .price { font-size: 1.2rem; font-weight: bold; color: #2ed573; margin-bottom: 12px; }
+    .btn { display: block; text-align: center; background: var(--primary); color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #a4b0be; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Promo<span>Liquida</span> 🔥</h1>
+    <p>Achadinhos da Shopee e Mercado Livre!</p>
+  </header>
+  <main>
+    <div class="grid" id="produtos-container">
+      <p style="text-align: center; grid-column: 1/-1;">Carregando ofertas...</p>
+    </div>
+  </main>
+  <footer>© PromoLiquida • Ofertas selecionadas</footer>
+</body>
+</html>
+
+
